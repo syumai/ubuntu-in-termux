@@ -28,3 +28,10 @@ This is a script that allows you to install Ubuntu in your termux application wi
 8. Give execution permission: `chmod +x ubuntu.sh`
 9. Run the script: `./ubuntu.sh -y`
 10. Now just start ubuntu: `./startubuntu.sh`
+
+### Additional steps
+
+1. `apt install sudo zsh`
+2. `adduser syumai`
+3. `gpasswd -a syumai sudo`
+4. comment out specified lines in startubuntu.sh and uncomment out syumai-user specific lines.
